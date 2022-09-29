@@ -110,7 +110,57 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 ########################################decision making in python#####################################
 
 
+# Lessons
 
+if 5 == 2:
+  print("It is correct")
+else:
+  print("It is not correct")
+
+pet = 'dog'
+if pet == "cat":
+  print("You have a cat")
+elif pet == "dog":
+  print("You have a dog")
+else:
+  print("I don't know what animal you have")
+
+age = 16
+schoolGrade = 9
+if age < 18:
+  print("You are a minor")
+  if schoolGrade >= 7:
+    print("Passed")
+  else:
+    print("Failed")
+else:
+  print("You are an adult")
+
+# Enter your name
+# Enter your relatives name
+# Enter your age
+# If age is less than 20, print I am Young
+# If age is less than 30, print I am a Vicenarian
+# If age is less than 40, print I am a Tricenarion
+# If age is less than 50, print I am a Quadragenarian
+# Else print I am old
+
+name = input('Enter your name:')
+relativesName = input('Enter your relatives name:')
+age= int(input('Enter your age:'))
+
+if age < 20:
+  print("You are Young")
+elif age < 30:
+  print("You are a Vicenarian")
+elif age < 40:
+  print("You are a Tricenarian")
+elif age < 50:
+  print("You are a Quadragenarian")
+else:
+  print("You are old")
+
+  
 # Decision Making Practice #1
 # Using the variables num1 and num2, which are fed with user input (just like in the provided code), create a flow control structure that compares the values of the variables, and returns a result according to the case:
 
@@ -128,6 +178,15 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # "num2 is greater than num1"
 # "num1 and num2 are equal"
 
+num1 = int(input("Enter a number:"))
+num2 = int(input("Enter another number:"))
+
+if num1 > num2:
+  print("num1 is greater than num2")
+elif num1 < num2:
+  print("num1 is less than num2")
+else:
+  print("num1 and num2 are equal")
 
 # Decision Making Practice #2
 # The laws of a certain country establish that an adult can drive if they are of legal age (18 years or older), and have a driver's license.
@@ -144,8 +203,9 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 age = 16
 has_license = False
 
-"You can drive"
-
+if age >= 18 and has_license == True:
+  print("You can drive")
+# elif age <= 16 and has_license 
 "You can't drive yet. You must be 18 years old and have a license"
 
 "You can't drive. You need to have a license"
@@ -201,8 +261,12 @@ knows_python = False
 # queue videos
 #what is iteration?
 #what are for loops?
+my_list = ['a','b','c','d']
+for letter in my_list:
+  letter_number = my_list.index(letter) + 1
+  print(f"letter {letter_number}: {letter}")
 
-
+# Loops Review and Practice
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
 
